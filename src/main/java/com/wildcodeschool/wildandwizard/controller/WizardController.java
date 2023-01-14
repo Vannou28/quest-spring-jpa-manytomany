@@ -76,8 +76,8 @@ public class WizardController {
 
                 // call the method getCourses in Wizard
                 List<Course> courses;
-                Method method = getMethod(wizard, "getCourses",
-                        new Class[]{});
+                Method method = getMethod(wizard, "getCourses", new Class[]{});
+                
                 if (method != null) {
                     try {
                         courses = (List<Course>) method.invoke(wizard);
@@ -86,6 +86,7 @@ public class WizardController {
                         e.printStackTrace();
                     }
                 }
+
 
                 wizardRepository.save(wizard);
             }

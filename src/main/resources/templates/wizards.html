@@ -36,6 +36,7 @@
         <th>Birth place</th>
         <th>Biography</th>
         <th>Muggle</th>
+        <th>Courses</th>
         <th></th>
     </tr>
     </thead>
@@ -48,6 +49,7 @@
         <td th:text="${wizard.birthPlace}">birth place</td>
         <td th:text="${wizard.biography}">biography</td>
         <td th:text="${wizard.muggle}">muggle</td>
+        <td th:text="${wizard.courses}"></td>
         <td><a th:href="@{/wizard/register(idWizard=${wizard.id})}">courses</a></td>
     </tr>
     </tbody>
